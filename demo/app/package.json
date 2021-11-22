@@ -1,0 +1,33 @@
+{
+  "name": "@meumonorepo/app",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Nicole Oliveira <nicoleoliveira1995@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/app.js",
+  "module": "dist/app.module.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npx rollup -c",
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "@meumonorepo/button": "^0.0.0",
+    "@meumonorepo/card": "^0.0.0"
+  }
+}

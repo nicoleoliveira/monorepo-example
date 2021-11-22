@@ -1,0 +1,4 @@
+class t extends HTMLElement{constructor(){super(),this.shadow=this.attachShadow({mode:"open"});}connectedCallback(){this.render();}render(){this.shadow.innerHTML="\n            <button>\n                <slot></slot>\n            </button>\n        ";}}customElements.define("my-button",t);
+
+class n extends HTMLElement{constructor(){super(),this.shadow=this.attachShadow({mode:"open"});}connectedCallback(){this.render();}render(){this.shadow.innerHTML="\n            <style>\n     div {\n        display: inline-block;\n        width: 250px;\n        padding: 16px;\n        border: solid 1px #939393;\n        font-family: sans-serif\n     }\n\n    </style>\n              <div>\n                  <slot></slot>\n\n                    <hr>\n                    <my-button>Saiba mais</my-button>\n              </div>\n          ";}}customElements.define("my-card",n);
+//# sourceMappingURL=app.module.js.map
